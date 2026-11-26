@@ -1,0 +1,295 @@
+[
+  {
+    "id": "m-fountain",
+    "name": "Fonte da Juventude",
+    "area": "Capri",
+    "icon": "fountain",
+    "sourceId": "hidden-package-129",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 298.28125,
+    "y": 513.96875,
+    "source": "https://fbritoferreira.github.io/gta6/l/hidden-package-129/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Fountain of Youth"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-skunk",
+    "name": "Skunk Ape / Pé Grande",
+    "area": "Hamlet · Grassrivers",
+    "icon": "footprint",
+    "sourceId": "random-event-002",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 406.7,
+    "y": 611.6,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-002/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Bigfoot"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-marbelle",
+    "name": "Hotel assombrado Marbelle",
+    "area": "Crosstown · Vice City",
+    "icon": "building",
+    "sourceId": "easter-egg-010",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 491.75,
+    "y": 490.84375,
+    "source": "https://fbritoferreira.github.io/gta6/l/easter-egg-010/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Easter Egg: Haunted Marbelle Hotel"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-ghostship",
+    "name": "Navio fantasma",
+    "area": "Farol · costa de Leonida",
+    "icon": "ship",
+    "sourceId": "random-event-093",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 533.40625,
+    "y": 316.25,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-093/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Ghost Ship (lighthouse)"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-hitchhiker",
+    "name": "Carona fantasma",
+    "area": "Estradas do norte de Leonida",
+    "icon": "ghost",
+    "sourceId": "random-event-092",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 425.03125,
+    "y": 273.375,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-092/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "related-point",
+    "aliases": [
+      "Ghost Woman"
+    ],
+    "hint": "O pino corresponde ao relato comunitário “Ghost Woman”. É uma referência relacionada à aparição na estrada; não foi estabelecido que seja o mesmo evento descrito como carona fantasma.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-ufo",
+    "name": "OVNI do Starlet Motel",
+    "area": "Arredores do Starlet Motel",
+    "icon": "ufo",
+    "sourceId": "random-event-063",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 336.28125,
+    "y": 399.53125,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-063/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Alien Encounter"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-ritual",
+    "name": "Ritual de Capri",
+    "area": "Capri · oeste de Tortoise Lake",
+    "icon": "sparkles",
+    "sourceId": "random-event-074",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 305.28125,
+    "y": 496.125,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-074/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "The Ritual of Sacrifice"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-eggs",
+    "name": "Ovos na torre de TV",
+    "area": "Bluegrass · torre de rádio",
+    "icon": "egg",
+    "sourceId": "hidden-package-076",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 432.3125,
+    "y": 585,
+    "source": "https://fbritoferreira.github.io/gta6/l/hidden-package-076/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Easter Egg: Bird Nest on the Mast"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-kraken",
+    "name": "Mistério do Kraken",
+    "area": "Mar a sudeste de Gloriana Key",
+    "icon": "waves",
+    "sourceId": null,
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 530.3,
+    "y": 558.48,
+    "source": "https://www.enzoalder.com/gta-vi/map?place=kraken-shipwreck-sculpture",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "approximate-area",
+    "aliases": [
+      ""
+    ],
+    "hint": "Área aproximada publicada no guia para a escultura junto a um naufrágio. O pino foi convertido da imagem cartográfica do guia para este mapa, usando dois marcos do GTADB. O círculo é uma referência visual de busca, não uma margem de erro medida.",
+    "checkedAt": "2026-11-26",
+    "radius": 22,
+    "coordinateMethod": {
+      "type": "image-calibration",
+      "guidePin": {
+        "x": 0.79732,
+        "y": 0.56089
+      },
+      "anchors": [
+        "https://map.gtadb.org/#VI,L264",
+        "https://map.gtadb.org/#VI,L3455"
+      ]
+    }
+  },
+  {
+    "id": "m-crab",
+    "name": "Caranguejo gigante",
+    "area": "Grassrivers · laboratório",
+    "icon": "crab",
+    "sourceId": "hidden-package-128",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 388.03125,
+    "y": 640.125,
+    "source": "https://fbritoferreira.github.io/gta6/l/hidden-package-128/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Mutated Giant Crab (research lab)"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-beached",
+    "name": "Baleia encalhada",
+    "area": "Costa a sudoeste de Gellhorn Raceway",
+    "icon": "waves",
+    "sourceId": "hidden-package-091",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 287.0625,
+    "y": 467.21875,
+    "source": "https://fbritoferreira.github.io/gta6/l/hidden-package-091/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Exploding Beached Whale"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-alien",
+    "name": "Abdução alienígena",
+    "area": "Estradas de Leonida",
+    "icon": "ufo",
+    "sourceId": "random-event-229",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 364.875,
+    "y": 326.78125,
+    "source": "https://fbritoferreira.github.io/gta6/l/random-event-229/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "UFO Van Abduction"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  },
+  {
+    "id": "m-belville",
+    "name": "Casa misteriosa de Belville",
+    "area": "Belville · Leonard County",
+    "icon": "home",
+    "sourceId": "hidden-package-123",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 464.84651939016766,
+    "y": 419.078716875542,
+    "source": "https://map.gtadb.org/#VI,L3455",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-landmark",
+    "aliases": [
+      ""
+    ],
+    "hint": "Casa marcada em Belville no GTADB, associada pelo guia comunitário à casa misteriosa. O pino indica o imóvel relatado, sem confirmação independente pelo Atlas.",
+    "checkedAt": "2026-11-26",
+    "guideSource": "https://www.enzoalder.com/gta-vi/easter-eggs#belville-mystery-house"
+  },
+  {
+    "id": "m-frog",
+    "name": "Sapo misterioso",
+    "area": "Leonida · casa indicada pela comunidade",
+    "icon": "sparkles",
+    "sourceId": "hidden-package-107",
+    "category": "mysteries",
+    "kind": "mystery",
+    "type": "Mistério",
+    "x": 395.625,
+    "y": 469.71875,
+    "source": "https://fbritoferreira.github.io/gta6/l/hidden-package-107/",
+    "status": "Relato comunitário · não confirmado",
+    "precision": "community-point",
+    "aliases": [
+      "Lickable Frog"
+    ],
+    "hint": "Ponto publicado pela comunidade. Use-o como referência para explorar; a ocorrência deste relato não é garantida.",
+    "checkedAt": "2026-11-26"
+  }
+]
