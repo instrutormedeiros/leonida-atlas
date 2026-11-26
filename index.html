@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080f1c">
+  <meta name="description" content="Leonida Atlas: seu mapa pessoal de GTA VI, com base comunitária, rumores identificados, filtros e progresso salvo.">
+  <title>Leonida Atlas — Arquivo Particular</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preconnect" href="https://fbritoferreira.github.io">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="./assets/vendor/leaflet.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body><noscript><p>Ative o JavaScript e abra este site no Safari ou Chrome para usar o Atlas.</p></noscript>
+<div class="app" id="app">
+ <aside class="sidebar" aria-label="Painel de exploração">
+  <header class="side-head">
+   <div class="topline"><span class="online-light"></span> ARQUIVO PARTICULAR <span class="topline-right">GTA VI / LEONIDA</span></div>
+   <div class="brandline"><div class="atlas-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 34 16 11l8 17 8-17 8 23M10 36h28M16 11l8 7 8-7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="brand">LEONIDA<span>ATLAS</span></div><div class="brand-kicker">Explore tudo. Sem estragar a história.</div></div></div>
+   <div class="progress-block"><div class="progress-head"><span>MINHA EXPLORAÇÃO</span><strong id="progressLabel">0 descobertas registradas</strong></div><div class="progress-track"><div id="progressBar"></div></div></div>
+   <div class="stats"><div><span id="statLocations">—</span><small>LOCAIS NO MAPA</small></div><div><span id="statMysteries">14</span><small>INVESTIGAÇÕES</small></div><div><span id="statCompleted">0</span><small>VISITADOS</small></div></div>
+  </header>
+  <section class="controls">
+   <div class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="query" placeholder="Buscar lugares, armas, cofres..." autocomplete="off" aria-label="Buscar locais e mistérios"><button id="clearSearch" title="Limpar pesquisa" aria-label="Limpar pesquisa" hidden>✕</button></div>
+   <div class="filters" id="filters" aria-label="Categorias"></div>
+   <div class="filter-footer"><label class="switchline"><input id="pendingOnly" type="checkbox"><span>Somente pendentes</span></label><label class="switchline"><input id="noSpoilers" type="checkbox" checked><span>Sem spoilers</span></label><span id="listCount" class="listing-count">Carregando...</span></div>
+  </section>
+  <section class="results" id="results" aria-label="Resultados de exploração">
+   <div class="section-label"><span id="sectionTitle">MISTÉRIOS DE LEONIDA</span><span id="sectionSubtitle">SEM SPOILERS</span></div>
+   <div class="results-scroll" id="cards">
+    <div class="fallback-hint"><b>As descobertas estão sendo preparadas.</b><p>Se você está vendo esta tela dentro de um visualizador de arquivos, abra o site publicado no Safari. Você ainda pode consultar um <a href="https://fbritoferreira.github.io/gta6/" target="_blank" rel="noopener">mapa da comunidade</a>.</p></div>
+   </div>
+  </section>
+  <footer class="sidebar-footer">
+   <div class="footer-actions"><button id="exportBtn" title="Exportar meu progresso">↓ Backup</button><button id="importBtn" title="Restaurar backup">↑ Importar</button><button id="resetBtn" title="Voltar à visão geral">◎ Visão geral</button></div>
+   <div class="copyright">Mapa e coordenadas: <a target="_blank" rel="noopener" href="https://github.com/fbritoferreira/gta6">Open GTA 6 Map</a> · <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Projeto de fã, não afiliado à Rockstar.</div>
+  </footer>
+ </aside>
+ <main class="map-shell" aria-label="Mapa de Leonida">
+  <div id="map" class="map-view" aria-label="Mapa interativo, com zoom e marcadores"></div>
+  <div id="mapFallback" class="map-fallback"><div class="fallback-orbit"></div><div class="fallback-grid"></div><div class="fallback-center"><div class="fallback-icon">✧</div><div class="fallback-overline">MAPA DE LEONIDA</div><h2>O mundo está esperando.</h2><p id="mapFallbackText">Conectando à cartografia comunitária...</p><a href="https://fbritoferreira.github.io/gta6/" target="_blank" rel="noopener" class="fallback-link">Abrir base cartográfica ↗</a><button id="retryMap" class="retry-map">Tentar novamente</button></div></div>
+  <div class="mapbar">
+   <div class="map-status"><span class="map-status-dot" id="mapDot"></span><span id="mapStatus">Conectando ao mapa...</span></div>
+   <div class="map-actions"><button id="themeBtn" title="Alternar mapa diurno/noturno">☾ <span>Mapa noturno</span></button><button id="addPinBtn" title="Adicionar um marcador pessoal">＋ <span>Meu marcador</span></button></div>
+  </div>
+  <div class="map-bottom-info"><span>CONTROLE DE EXPLORAÇÃO</span><strong>NOMES E DESCRIÇÕES <span>· PROTEGIDOS POR PADRÃO</span></strong></div>
+  <div class="map-tools"><button id="zoomInBtn" aria-label="Aproximar mapa" title="Aproximar">+</button><button id="zoomOutBtn" aria-label="Afastar mapa" title="Afastar">−</button><button id="homeBtn" aria-label="Centralizar mapa" title="Visão geral">◎</button></div>
+  <div class="detail-panel" id="detail" hidden></div>
+  <div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
+ </main>
+</div>
+<div class="modal-layer" id="pinModal" hidden>
+ <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pinModalTitle"><div class="modal-eyebrow">REGISTRO PARTICULAR</div><h2 id="pinModalTitle">Novo local no seu Atlas</h2><p>Marque uma descoberta no mapa. O registro ficará neste navegador até você exportar um backup.</p><label for="pinTitle">Nome da descoberta</label><input id="pinTitle" maxlength="80" placeholder="Ex.: local secreto, esconderijo..."><label for="pinNote">Observações (opcional)</label><textarea id="pinNote" rows="3" maxlength="600" placeholder="O que você encontrou? Onde fica a entrada?"></textarea><div class="modal-buttons"><button id="pinCancel">Cancelar</button><button id="pinSave">Salvar marcador</button></div></div>
+</div>
+<input type="file" accept=".json,application/json" id="backupInput" hidden>
+<script src="./assets/vendor/leaflet.js"></script>
+<script src="./assets/app.js" defer></script>
+</body>
+</html>
