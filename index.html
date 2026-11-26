@@ -5,13 +5,13 @@
 <meta name="description" content="Seu atlas de Leonida: mapa comunitário, mistérios e rumores localizados, favoritos e progresso pessoal.">
 <title>Leonida Atlas — Explore Leonida</title>
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest">
-<link rel="preconnect" href="https://fbritoferreira.github.io"><link rel="stylesheet" href="./assets/vendor/leaflet.css"><link rel="stylesheet" href="./assets/style.css?v=5">
+<link rel="preconnect" href="https://fbritoferreira.github.io"><link rel="stylesheet" href="./assets/vendor/leaflet.css"><link rel="stylesheet" href="./assets/style.css?v=9">
 </head>
 <body>
 <noscript>Ative o JavaScript e abra o site no Safari ou Chrome para usar o mapa.</noscript>
 <div class="app" id="app">
- <aside class="sidebar" aria-label="Painel de exploração">
-  <header class="side-head"><div class="brandline"><div class="atlas-symbol" data-icon="compass"></div><div><h1 class="brand">LEONIDA ATLAS</h1><p class="brand-kicker">Seu próximo segredo está no mapa.</p></div></div></header>
+ <aside class="sidebar" id="explorePanel" aria-label="Painel de exploração">
+  <header class="side-head"><div class="brandline"><div class="atlas-symbol" data-icon="compass"></div><div><h1 class="brand">LEONIDA ATLAS</h1><p class="brand-kicker">Seu próximo segredo está no mapa.</p></div></div><button class="mobile-close" id="closeExplore" aria-label="Fechar exploração" data-icon="close"></button></header>
   <section class="controls" aria-label="Filtros do mapa">
    <div class="searchbox"><span data-icon="search"></span><input type="search" id="query" placeholder="Buscar no mapa" autocomplete="off" aria-label="Buscar locais e mistérios"><button id="clearSearch" aria-label="Limpar pesquisa" data-icon="close" hidden></button></div>
    <div class="filters" id="filters" aria-label="Categorias"></div>
@@ -27,11 +27,12 @@
   <div class="mapbar"><div class="map-status"><strong>Leonida</strong><span class="status-divider"></span><span class="map-status-dot" id="mapDot"></span><span id="mapStatus">Conectando...</span></div><div class="map-actions"><button id="themeBtn" aria-label="Alternar mapa diurno e noturno"></button><button id="addPinBtn" aria-pressed="false" title="Adicionar marcador pessoal"><span data-icon="plus"></span><span>Marcador</span></button></div></div>
   <div class="map-legend"><span class="certainty-dot"></span><span>Pinos e rumores da comunidade</span><span class="legend-separator">·</span><span id="statLocations">—</span><span>locais na base</span></div>
   <div class="map-tools"><button id="zoomInBtn" aria-label="Aproximar mapa">+</button><span id="zoomLabel">1.0×</span><button id="zoomOutBtn" aria-label="Afastar mapa">−</button><button id="homeBtn" aria-label="Centralizar mapa" data-icon="target"></button></div>
-  <button class="mobile-toggle" id="mobileToggle" aria-expanded="true">Ampliar mapa</button>
+  <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="explorePanel"><span data-icon="search"></span>Categorias e busca</button>
   <div class="detail-panel" id="detail" role="region" aria-label="Ficha do local" hidden></div><div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
  </main>
+<nav class="mobile-nav" aria-label="Navegação principal"><button id="navMap" class="active" aria-current="page"><span data-icon="compass"></span>Mapa</button><button id="navExplore" aria-controls="explorePanel" aria-expanded="false"><span data-icon="search"></span>Explorar</button><button id="navSaved" aria-controls="explorePanel" aria-expanded="false"><span data-icon="star"></span>Salvos</button></nav>
 </div>
 <div class="modal-layer" id="pinModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="pinModalTitle"><h2 id="pinModalTitle">Um lugar só seu</h2><p>Registre uma descoberta. Seu marcador fica salvo neste navegador.</p><label for="pinTitle">Nome do local</label><input id="pinTitle" maxlength="80" placeholder="Ex.: meu esconderijo favorito"><label for="pinNote">Suas anotações</label><textarea id="pinNote" rows="3" maxlength="600" placeholder="Como chegar, o que encontrar..."></textarea><div class="modal-buttons"><button id="pinCancel">Cancelar</button><button id="pinSave">Salvar marcador</button></div></div></div>
 <input type="file" accept=".json,application/json" id="backupInput" hidden>
-<script src="./assets/vendor/leaflet.js"></script><script src="./assets/app.js?v=5" defer></script>
+<script src="./assets/vendor/leaflet.js"></script><script src="./assets/app.js?v=9" defer></script>
 </body></html>

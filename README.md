@@ -8,7 +8,7 @@ Abra o endereço HTTPS do GitHub Pages. Não use a pré-visualização de HTML d
 
 - Mapa com zoom, agrupamento de pinos e temas diurno/noturno.
 - Busca, categorias, favoritos, visitados, anotações e marcadores pessoais.
-- **Sem spoilers ativado por padrão:** oculta nomes potencialmente narrativos e as descrições comunitárias. Os 14 temas de investigação mantêm títulos próprios sem desfechos. A busca também encontra o nome original dos pontos ocultados. Ao desativar, o catálogo pode revelar informações narrativas. Não existe filtro por capítulo: a fonte não fornece esse metadado. A cartografia em si revela a geografia.
+- **Sem spoilers ativado por padrão:** mantém os nomes dos locais e itens e oculta as descrições comunitárias. Nomes de mistérios com termos narrativos explícitos também são ocultados. Os 14 temas de investigação mantêm títulos próprios sem desfechos. A busca também encontra o nome original dos pontos ocultados. Ao desativar, o catálogo pode revelar informações narrativas. Não existe filtro por capítulo: a fonte não fornece esse metadado. A cartografia em si revela a geografia.
 - **14 fichas de mistérios com localização comunitária**, além dos demais Easter eggs e relatos do catálogo. Todos aparecem na categoria Mistérios. Sem promessa de que o evento ocorrerá no jogo. A classificação de confiabilidade é independente da disponibilidade de coordenadas.
 - Os 4.687 pontos do catálogo são comunitários, não confirmados individualmente pelo Atlas. Nenhum selo de confirmação oficial é atribuído automaticamente.
 - Backup JSON para transferência manual. Não existe sincronização entre dispositivos. Registros ficam neste navegador; não são enviados ao GitHub. O site e o catálogo são públicos.
@@ -48,4 +48,10 @@ Referências comunitárias adicionais: https://www.enzoalder.com/gta-vi/map?plac
 
 ## Navegação
 
-Zoom fracionário em passos menores, animação de navegação aos pinos, inércia de movimento e agrupamento espacial estável. A lista e o mapa usam os mesmos resultados da busca. Somente o entorno da área visível é desenhado; os demais pontos reaparecem ao navegar. Pinos comuns são desenhados em canvas, e os grupos não são recriados durante cada quadro de movimento. No iPhone, “Ampliar mapa” abre mais espaço e a ficha selecionada ocupa a parte inferior da tela sem cobrir o pino.
+Zoom fracionário em passos menores, animação de navegação aos pinos, inércia de movimento e agrupamento espacial estável. A lista e o mapa usam os mesmos resultados da busca. Somente o entorno da área visível é desenhado; os demais pontos reaparecem ao navegar. Pinos comuns são desenhados em canvas, e os grupos não são recriados durante cada quadro de movimento. No iPhone, o mapa ocupa a tela principal. “Categorias e busca” ou “Explorar” abre um painel amplo com rolagem única: os controles saem da frente durante a leitura, e a lista não fica presa em uma faixa estreita. As categorias se distribuem em uma grade, sem barra horizontal. “Mapa” retorna ao mapa; “Salvos” abre os favoritos. Selecionar um local fecha o painel e enquadra o pino destacado acima da ficha. As transições de zoom são aplicadas apenas durante a animação própria do Leaflet, evitando interpolação permanente durante o gesto de pinça.
+
+## Revisão da navegação no iPhone
+
+A composição móvel segue a referência em vídeo fornecida pelo usuário: mapa como tela principal, busca/categorias sob demanda, controles compactos e ficha contextual. O painel de exploração usa apenas uma área de rolagem; o elemento da lista deixa o conteúdo fluir, sem rolagem interna reduzida. O cabeçalho mantém o botão de fechar acessível. A navegação inferior respeita a área segura do aparelho.
+
+A verificação móvel inclui alturas úteis de navegador de 440×760, 390×664 e 320×480, gesto de rolagem no painel, seleção de um resultado, enquadramento do pino, navegação entre Mapa/Explorar/Salvos e conferência do desktop em 1440×900. Não foi realizado teste em um iPhone físico.
