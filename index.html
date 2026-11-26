@@ -5,7 +5,7 @@
 <meta name="description" content="Seu atlas de Leonida: mapa comunitário, mistérios e rumores localizados, favoritos e progresso pessoal.">
 <title>Leonida Atlas — Explore Leonida</title>
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest">
-<link rel="preconnect" href="https://fbritoferreira.github.io"><link rel="stylesheet" href="./assets/vendor/leaflet.css"><link rel="stylesheet" href="./assets/style.css?v=9">
+<link rel="preconnect" href="https://fbritoferreira.github.io"><link rel="stylesheet" href="./assets/vendor/leaflet.css"><link rel="stylesheet" href="./assets/style.css?v=13">
 </head>
 <body>
 <noscript>Ative o JavaScript e abra o site no Safari ou Chrome para usar o mapa.</noscript>
@@ -33,6 +33,7 @@
 <nav class="mobile-nav" aria-label="Navegação principal"><button id="navMap" class="active" aria-current="page"><span data-icon="compass"></span>Mapa</button><button id="navExplore" aria-controls="explorePanel" aria-expanded="false"><span data-icon="search"></span>Explorar</button><button id="navSaved" aria-controls="explorePanel" aria-expanded="false"><span data-icon="star"></span>Salvos</button></nav>
 </div>
 <div class="modal-layer" id="pinModal" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="pinModalTitle"><h2 id="pinModalTitle">Um lugar só seu</h2><p>Registre uma descoberta. Seu marcador fica salvo neste navegador.</p><label for="pinTitle">Nome do local</label><input id="pinTitle" maxlength="80" placeholder="Ex.: meu esconderijo favorito"><label for="pinNote">Suas anotações</label><textarea id="pinNote" rows="3" maxlength="600" placeholder="Como chegar, o que encontrar..."></textarea><div class="modal-buttons"><button id="pinCancel">Cancelar</button><button id="pinSave">Salvar marcador</button></div></div></div>
+<div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Imagem do local" hidden><button id="photoClose" aria-label="Fechar imagem">Fechar ×</button><img id="photoImage" alt="Imagem comunitária do local"></div>
 <input type="file" accept=".json,application/json" id="backupInput" hidden>
-<script src="./assets/vendor/leaflet.js"></script><script src="./assets/app.js?v=9" defer></script>
+<script src="./assets/vendor/leaflet.js"></script><script src="./assets/glyphs.js?v=13" defer></script><script src="./assets/app.js?v=13" defer></script>
 </body></html>

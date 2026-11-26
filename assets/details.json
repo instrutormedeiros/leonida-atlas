@@ -1,0 +1,32 @@
+{
+  "standout-vehicle-028": {
+    "name": "Stallion emancipador",
+    "aliases": ["Emancipator Stallion", "Classique Emancipator Stallion"],
+    "description": "Versão modificada do Classique Stallion de 1968, indicada em uma garagem próxima de Ambrosia.",
+    "fields": [
+      ["Local", "Garagem separada atrás de uma casa, na saída oeste de Ambrosia"],
+      ["Acesso", "Trancado"],
+      ["Segurança", "Com alarme"],
+      ["Rastreador", "Nenhum"],
+      ["Valor de venda", "US$ 3.190"],
+      ["Custo de registro", "US$ 10.650"],
+      ["Tipo", "Muscle car"],
+      ["Época", "Anos 1960 · restaurado"],
+      ["Lugares", "2"],
+      ["Armazenamento", "2"],
+      ["Estado da lataria", "Ótimo"],
+      ["Especialista", "Muscle car"],
+      ["Coleção", "Poderosos e turbinados"],
+      ["Modelo", "Classique Stallion (1968) · carros potentes"]
+    ],
+    "stats": [
+      ["Velocidade", 6.3],
+      ["Aceleração", 6.4],
+      ["Asfalto", 3.8],
+      ["Off-road", 4.5],
+      ["Resistência", 5.0]
+    ],
+    "sourceLabel": "Dados visíveis no vídeo de referência enviado pelo usuário em 26/11/2026. Relato comunitário, não verificado no jogo pelo Atlas.",
+    "sourceUrl": "https://mapa.clubegta6.com.br/"
+  }
+}
